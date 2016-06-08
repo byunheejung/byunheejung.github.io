@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <style>
+        h1{text-align:center;padding:5px}
+        h2{background:#F1A9A0;line-height:2em;color:#fff;padding:3px;font-size:12px;text-align:center}
+        .outer{width:100%;height:200px;background-color:#333;display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+        .outer .inner{background:blue;padding:10px}
+        .outer2{width:100%;height:200px;background-color:#333;display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-pack:center;margin-bottom:10px}
+        .outer2 .inner{background:blue;text-align:center}
+        .outer2 .inner .inner2{display:inline-block;background:yellow}
+        .outer3{width:100%;height:200px;background-color:#333;display:table}
+        .outer3 .inner{display:table-cell;vertical-align:middle;background:yellow;text-align:center}
+        .outer3 .inner span{background:red}
+    </style>
+</head>
+<body>
+   <h1>DIV VERTICAL ALIGN</h1>
+    <h2>1</h2>
+    <div class="outer">
+        <div class="inner">blue</div>
+    </div>
+    <h2>2</h2>
+    <div class="outer2">
+        <div class="inner">
+            <div class="inner2">yellowasdfasfasfasfsafsaf</div>
+        </div>
+    </div>
+    <h2>3</h2>
+    <div class="outer3">
+        <div class="inner">
+            <span>yellow</span>
+        </div>
+    </div>
+</body>
+</html>
